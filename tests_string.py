@@ -19,6 +19,5 @@ def test_raises_exception_on_non_string_arguments():
 
 
 @pytest.mark.parametrize("x, y, expected", [("DRAGONS", "GON", True), ("HOME", "AA", False)])
-# @pytest.mark.parametrize("y", ["GON", "AA"])
 def test_contains(x, y, expected):
     assert contains(x, y) == expected
